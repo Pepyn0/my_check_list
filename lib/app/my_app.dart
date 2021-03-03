@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_check_list/app/view/my_home_page.dart';
+import 'package:my_check_list/app/view/task_add.dart';
+import 'package:my_check_list/app/view/task_list.dart';
 
 class MyApp extends StatelessWidget {
+	static const HOME = '/';
+	static const TASK_ADD = 'task-add';
 
 	@override
 	Widget build(BuildContext context) {
@@ -11,7 +14,10 @@ class MyApp extends StatelessWidget {
 				primarySwatch: Colors.deepPurple,
 				visualDensity: VisualDensity.adaptivePlatformDensity,
 			),
-			home: MyHomePage(title: 'Flutter Demo Home Page'),
+			routes: {
+				HOME: (context) => TaskList(),
+				TASK_ADD: (context) => TaskAdd(),
+			},
 		);
 	}
 }
