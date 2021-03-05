@@ -1,9 +1,9 @@
 class Task{
 	int id;
 	String task;
-  String description;
+	String description;
 	bool important;
-  bool completed;
+	bool completed;
 
 	Task({this.id, this.task, this.description, this.important = false, this.completed = false});
 }
