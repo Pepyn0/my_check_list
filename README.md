@@ -1,3 +1,3 @@
-# my_check_list
+# My Check List
 
 A simple app for my sister.
